@@ -28,7 +28,7 @@ listener http:Listener uiHolderLogin = new(9091);
 
 map<string> sessionMap = {};
 map<boolean> authenticatedMap = {};
-map<string> userMap = {"alice": "123"};
+map<string> userMap = {"alice@gmail.com": "123"};
 string chatBuffer = "";
 string pk = "";
 string verifiableCredentialsRepositoryURL = "https://localhost:9091/vc/";
@@ -83,7 +83,7 @@ service uiServiceHolderLogin on uiHolderLogin {
         }
     }
    resource function displayLoginPage(http:Caller caller, http:Request req) {
-       string buffer = readFile("web/holder-login.html");
+       string buffer = readFile("health/index.html");
        
        http:Response res = new;
 

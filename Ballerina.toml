@@ -17,4 +17,4 @@ target = "java8"
     artifactId = "abc"
     path = "/home/chamodi/software/mysql-connector-java-5.1.46.jar"
     groupId = "abc"
-    modules = ["utils", "issuer", "chat"]
+    modules = ["utils", "issuer", "chat", "doctor", "patient"]

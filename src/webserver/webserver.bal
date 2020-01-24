@@ -8,7 +8,7 @@ import ballerina/mime;
 import ballerina/system;
 
 //// Configuration related properties.
-string WEBSERVER_APP_FOLDER = config:getAsString("WEBSERVER_APP_FOLDER", checkpanic filepath:build(system:getUserHome(), "git", "blockchain-iam-group-chat/web"));
+string WEBSERVER_APP_FOLDER = config:getAsString("WEBSERVER_APP_FOLDER", checkpanic filepath:build(system:getUserHome(), "git", "blockchain-health-service/health"));
 listener http:Listener webServerEP = new(config:getAsInt("WEBSERVER_SERVICE_PORT", 8080), config = {
 });
 
