@@ -12,7 +12,7 @@ listener http:Listener uiHolderLogin = new(9091);
 
 map<string> sessionMap = {};
 map<boolean> authenticatedMap = {};
-map<string> userMap = {"alice@gmail.com": "123"};
+map<string> userMap = {"alice": "123"};
 string chatBuffer = "";
 string pk = "";
 string verifiableCredentialsRepositoryURL = "https://localhost:9091/vc/";
@@ -353,7 +353,7 @@ service uiServiceHolderLogin on uiHolderLogin {
    resource function listVC(http:Caller caller, http:Request req) returns error? {
         map<string> requestVariableMap = check req.getFormParams();
         string did = requestVariableMap["did"]  ?: "";
-        var selectRet = ssiDB->select(<@untainted> "select id, issuer, name from ssidb.vclist where (did LIKE '"+ <@untainted> did +"');", FullVCRecord);
+       var selectRet = ssiDB->select(<@untainted> "select id, issuer, name from ssidb.vclist where (did LIKE '"+ <@untainted> did +"');", FullVCRecord);
         string tbl = "<table><tr><td>No Verifiable credentials associated with your account yet.";
 
         if (selectRet is table<FullVCRecord>) {
@@ -416,23 +416,22 @@ service uiServiceHolderLogin on uiHolderLogin {
                
         if (requestVariableMap["command"] == "cmd1") {
 
-            io:println(publicKey);
 
-            UserKeyData ud= {username: "alice", publicKey: publicKey};
+            UserKeyData ud= {username: "bob", publicKey: publicKey};
 
             json|error j = json.constructFrom(ud);
         if (j is json) {
-            http:Client clientEndpoint = new("http://postman-echo.com");
-            var response = clientEndpoint->post("/post", j);
+            http:Client clientEndpoint = new("http://localhost:3000");
+
+            io:println(j);
+            http:Request res = new;
+            res.setJsonPayload(j);
+            var response = clientEndpoint->post("/pubkey", res);
             handleResponse(response,caller);
             
         }
 
-            
-
-            
-
-            return;
+         return;
 
             // string finalResult = sendTransactionAndgetHash(publicKey);
 

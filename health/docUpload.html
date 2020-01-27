@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="height=device-height, initial-scale=0.68">
+    <head> 
+        <title>WSO2 Health Service</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+                input[type=submit]{background-color: #008CBA;} 
+                input[type=submit]:hover {
+                  background-color: #45a049;
+                }
+                input[type=text], input[type=password],select {
+                  width:300px;
+                  padding: 8px 10px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                }
+                
+                div {
+                  border-radius: 5px;
+                  background-color: #f2f2f2;
+                  padding: 20px;
+                  height: 100%;
+                }
+                table {
+                  font-family: arial, sans-serif;
+                  border-collapse: collapse;
+                  width: 100%;
+                }
+                
+                td, th {
+                  border: 1px solid #dddddd;
+                  text-align: left;
+                  padding: 8px;
+                }
+                
+                tr:nth-child(even) {
+                  background-color: #dddddd;
+                }
+                button {
+                  width: auto;
+                  background-color: #4CAF50;
+                  color: white;
+                  padding: 10px 8px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 10px;
+                  cursor: pointer;
+                }
+                button:active {
+                    background-color: rgb(0, 81, 125);
+                  }
+                .message-box {
+                    background-color: rgb(70, 190, 255);
+                    width: 350px;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    padding: 2px;
+                }
+                button:hover {
+                    opacity: 0.7;
+                } 
+                </style>
+                <script
+                  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <center><h1>Blockchain based Health Service</h1></center>
+       <div style="text-align: center;">
+                <h2>Enter your health details here!!</h2>
+                <form>
+                    Patient Name: <input id="patientName" type="text" /><br />
+                    Date of Birth: <input id="DOB" type="text" /><br />
+                    Patient Mobile: <input id="patientMobile" type="text" /><br />
+                    Date Attended:<input id="date" type="text" /><br />
+                    Time Attended:<input id="time" type="text" /><br />
+                    Description:<input id="description" type="text" /><br />
+                    Physician Attended:<input id="doctorName" type="text" /><br />
+                    Diagnosis: <input id="diagnosis" type="text" /><br />
+                    Tests Performed: <input id="testsPerformed" type="text" /><br />
+                    Test Results: <input id="testResults" type="text" /><br />
+                    Prescribed Action:<input id="prescribedAction" type="text" /><br />
+                    Prescribed Medication:<input id="prescribedMedication" type="text" /><br />
+                    Document:<input id="doc" type="text" /><br />
+                </form>
+                <button onclick="submitRecord()">Submit Record Here</button>
+            </br>
+                <h2>Update your health details</h2>
+                <form>
+                    Admin Id:<input id="adminId" type="text" /><br />
+                    Password: <input id="key" type="password" /><br />
+                    Health Record Id:<input id="healthRecordId" type="text" /><br />
+                    Updated Note on Health Record:<input id="updatedNote" type="text" /><br />
+                    <!-- Patient Name: <input id="patientName" type="text" /><br />
+                    Date of Birth: <input id="DOB" type="text" /><br />
+                    Patient Mobile: <input id="patientMobile" type="text" /><br />
+                    Date Attended:<input id="date" type="text" /><br />
+                    Time Attended:<input id="time" type="text" /><br />
+                    Description:<input id="description" type="text" /><br />
+                    Physician Attended:<input id="doctorName" type="text" /><br />
+                    Diagnosis: <input id="diagnosis" type="text" /><br />
+                    Tests Performed: <input id="testsPerformed" type="text" /><br />
+                    Test Results: <input id="testResults" type="text" /><br />
+                    Prescribed Action:<input id="prescribedAction" type="text" /><br />
+                    Prescribed Medication:<input id="prescribedMedication" type="text" /><br />
+                    Document:<input id="doc" type="text" /><br /> -->
+                </form>
+                <button onclick="updateRecord()">Update Health Details</button>
+            </br>
+                <button onclick="">Send Encrypted Record to Patient</button>
+                <h2>View Health Details</h2>
+                <form>
+                    Health Record Id: <input id="healthRecordId" placeholder="Enter your Health Record ID " type="text" />
+                </form>
+                <button onclick="viewRecord()">View Record</button>
+            </br>
+                <span id="getResult"></span>
+            <div>
+                <script>
+        function submitRecord() {
+            $.ajax({
+                type: "post",
+                contentType: "application/x-www-form-urlencoded",
+                url: 'http://localhost:7080/submitRecord/',
+                data: {
+                    'patientName': document.getElementById('patientName').value,
+                   'DOB': document.getElementById('DOB').value,
+                    'patientMobile':document.getElementById('patientMobile').value,
+                    'date':document.getElementById('date').value,
+                    'time':document.getElementById('time').value,
+                    'description':document.getElementById('description').value,
+                    'doctorName':document.getElementById('doctorName').value,
+                    'diagnosis': document.getElementById('diagnosis').value,
+                   'testsPerformed': document.getElementById('testsPerformed').value,
+                    'testResults':document.getElementById('testResults').value,
+                    'prescribedAction':document.getElementById('prescribedAction').value,
+                    'prescribedMedication':document.getElementById('prescribedMedication').value,
+                    'doc':document.getElementById('doc').value
+                },
+                success: function(response) {
+                    alert(response)
+                },
+                error: function(xhr) {
+                    alert('Request Failed. Make Sure Server is Listening')
+                }
+            });
+        }
+
+        function updateRecord() {
+            $.ajax({
+                type: "post",
+                contentType: "application/x-www-form-urlencoded",
+                url: 'http://localhost:7080/updateRecord/',
+                data: {
+                    'adminId': document.getElementById('adminId').value,
+                    'key': document.getElementById('key').value,
+                    'healthRecordId': document.getElementById('healthRecordId').value,
+                  
+                  'updatedNote': document.getElementById('updatedNote').value
+                      },
+             success: function(response) {
+              alert(response)
+                 },
+            
+              error: function(xhr) {
+              alert('Request Failed. Make Sure Server is Listening.')
+           }
+        });
+   }
+
+   function viewRecord(){
+       $.ajax({
+           url: "http://localhost:7080/viewRecord/",
+           type: "get",
+           data: {
+               'healthRecordId' :document.getElementById('healthRecordId').value
+           },
+           success: function(response) {
+             if (response=="Error: Item with this Id doesn't exist..!"|| response=="Not a health record"){
+                 let sectionsContent = ''
+                 document.querySelector('#getResult').innerHTML = sectionsContent;
+                 alert(response);
+             }else{
+              let resp = JSON.parse(response);
+                if(typeof resp.updatedNote=="undefined"){
+                 let sectionContent= `<table>
+   <tr>
+    <th>Patient Name</th>
+    <th>Date of Birth</th>
+    <th>Patient Mobile</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Description</th>
+    <th>Doctor Name</th>
+    <th>Diagnosis</th>
+    <th>Tests Performed</th>
+    <th>Test Results</th>
+    <th>Prescribed Action</th>
+    <th>Prescribed Medication</th>
+    <th>Document</th>
+    </tr>
+    <tr>
+    <td>${resp.patientName}</td>
+    <td>${resp.DOB}</td>
+    <td>${resp.patientMobile}</td>
+    <td>${resp.date}</td>
+    <td>${resp.time}</td>
+    <td>${resp.description}</td>
+    <td>${resp.doctorName}</td>
+    <td>${resp.diagnosis}</td>
+    <td>${resp.testsPerformed}</td>
+    <td>${resp.testResults}</td>
+    <td>${resp.prescribedAction}</td>
+    <td>${resp.prescribedMedication}</td>
+    <td>${resp.doc}</td>
+  </tr>
+  </table>`      
+
+ document.querySelector('#getResult').innerHTML = sectionContent;
+      }else{
+        let sectionContent= `<table>
+   <tr>
+    <th>Patient Name</th>
+    <th>Date of Birth</th>
+    <th>Patient Mobile</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Description</th>
+    <th>Doctor Name</th>
+    <th>Diagnosis</th>
+    <th>Tests Performed</th>
+    <th>Test Results</th>
+    <th>Prescribed Action</th>
+    <th>Prescribed Medication</th>
+    <th>Document</th>
+    <th>Updated Note</th>
+    </tr>
+    <tr>
+    <td>${resp.patientName}</td>
+    <td>${resp.DOB}</td>
+    <td>${resp.patientMobile}</td>
+    <td>${resp.date}</td>
+    <td>${resp.time}</td>
+    <td>${resp.description}</td>
+    <td>${resp.doctorName}</td>
+    <td>${resp.diagnosis}</td>
+    <td>${resp.testsPerformed}</td>
+    <td>${resp.testResults}</td>
+    <td>${resp.prescribedAction}</td>
+    <td>${resp.prescribedMedication}</td>
+    <td>${resp.doc}</td>
+    <td>${resp.updatedNote}</td>
+  </tr>
+  </table>`      
+
+ document.querySelector('#getResult').innerHTML = sectionContent;
+      }
+    }
+},
+ error: function(xhr) {
+  alert('Request Failed. Make Sure the Server is Listening.')
+         }
+        });
+      }
+ </script>    
+</body>
+</html>

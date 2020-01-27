@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="height=device-height", initial-scale=0.68">
+    <head>
+        <title>WSO2 Health Service</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <center><h2>View your Health Records here!!</h2></center>
+        <form>
+            Health Record Id : <input id="healthRecordId" placeholder="Enter your Health Record Id here.." type="text" />
+        </form>
+        <button onclick="viewRecord()"> View your Health Record</button>
+        </br>
+        <span id="getResult"></span>
+        <div>
+            <script>
+             function viewRecord(){
+      console.log(document.getElementById('healthRecordId').value)
+       $.ajax({
+           url: "http://localhost:7080/viewRecord/"+document.getElementById('healthRecordId').value,
+           type: "get",
+           success: function(response) {
+             if (response=="Error: Item with this Id doesn't exist..!"|| response=="Not a health record"){
+                 let sectionsContent = ''
+                 document.querySelector('#getResult').innerHTML = sectionsContent;
+                 alert(response);
+             }else{
+               console.log(response)
+              let resp = JSON.parse(response.response);
+                if(typeof resp.updatedNote=="undefined"){
+                 let sectionContent= `<table>
+   <tr>
+    <th>Patient Name</th>
+    <th>Date of Birth</th>
+    <th>Patient Mobile</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Description</th>
+    <th>Doctor Name</th>
+    <th>Diagnosis</th>
+    <th>Tests Performed</th>
+    <th>Test Results</th>
+    <th>Prescribed Action</th>
+    <th>Prescribed Medication</th>
+    <th>Document</th>
+    </tr>
+    <tr>
+    <td>${resp.patientName}</td>
+    <td>${resp.DOB}</td>
+    <td>${resp.patientMobile}</td>
+    <td>${resp.date}</td>
+    <td>${resp.time}</td>
+    <td>${resp.description}</td>
+    <td>${resp.doctorName}</td>
+    <td>${resp.diagnosis}</td>
+    <td>${resp.testsPerformed}</td>
+    <td>${resp.testResults}</td>
+    <td>${resp.prescribedAction}</td>
+    <td>${resp.prescribedMedication}</td>
+    <td>${resp.doc}</td>
+  </tr>
+  </table>`      
+
+ document.querySelector('#getResult').innerHTML = sectionContent;
+      }else{
+        let sectionContent= `<table>
+   <tr>
+    <th>Patient Name</th>
+    <th>Date of Birth</th>
+    <th>Patient Mobile</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Description</th>
+    <th>Doctor Name</th>
+    <th>Diagnosis</th>
+    <th>Tests Performed</th>
+    <th>Test Results</th>
+    <th>Prescribed Action</th>
+    <th>Prescribed Medication</th>
+    <th>Document</th>
+    <th>Updated Note</th>
+    </tr>
+    <tr>
+    <td>${resp.patientName}</td>
+    <td>${resp.DOB}</td>
+    <td>${resp.patientMobile}</td>
+    <td>${resp.date}</td>
+    <td>${resp.time}</td>
+    <td>${resp.description}</td>
+    <td>${resp.doctorName}</td>
+    <td>${resp.diagnosis}</td>
+    <td>${resp.testsPerformed}</td>
+    <td>${resp.testResults}</td>
+    <td>${resp.prescribedAction}</td>
+    <td>${resp.prescribedMedication}</td>
+    <td>${resp.doc}</td>
+    <td>${resp.updatedNote}</td>
+  </tr>
+  </table>`      
+
+ document.querySelector('#getResult').innerHTML = sectionContent;
+      }
+    }
+},
+ error: function(xhr) {
+  alert('Request Failed. Make Sure the Server is Listening.')
+         }
+        });
+      }
+            </script>
+        </div>
+    </body>
+</html>

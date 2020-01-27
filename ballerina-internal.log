@@ -52,3 +52,289 @@ java.lang.NullPointerException
 	at java.util.Optional.ifPresent(Optional.java:159)
 	at org.ballerinalang.tool.Main.main(Main.java:59)
  
+[2020-01-26 10:42:29,236] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 10:42:29,238] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 10:44:09,955] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 10:44:09,958] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 11:08:04,658] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 11:08:04,660] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 19:31:48,679] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 19:31:48,683] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:01:26,719] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:01:26,721] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:02:19,985] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.doctor.___init.wso2_doctor_0_1_0__stop_(doctor:402)
+	at wso2.doctor.___init.$lambda$wso2_doctor_0_1_0__stop_(doctor)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.doctor.___init.$moduleStop(doctor)
+	at wso2.doctor.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:02:19,988] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.doctor.___init.wso2_doctor_0_1_0__stop_(doctor:402)
+	at wso2.doctor.___init.$lambda$wso2_doctor_0_1_0__stop_(doctor)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.doctor.___init.$moduleStop(doctor)
+	at wso2.doctor.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:39:02,419] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:39:02,421] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:43:37,312] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 20:43:37,315] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:18:10,862] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:18:10,864] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:18:21,190] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.doctor.___init.wso2_doctor_0_1_0__stop_(doctor:402)
+	at wso2.doctor.___init.$lambda$wso2_doctor_0_1_0__stop_(doctor)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.doctor.___init.$moduleStop(doctor)
+	at wso2.doctor.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:18:21,192] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.doctor.___init.wso2_doctor_0_1_0__stop_(doctor:402)
+	at wso2.doctor.___init.$lambda$wso2_doctor_0_1_0__stop_(doctor)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.doctor.___init.$moduleStop(doctor)
+	at wso2.doctor.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:20:53,209] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:20:53,211] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:21:06,101] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.doctor.___init.wso2_doctor_0_1_0__stop_(doctor:402)
+	at wso2.doctor.___init.$lambda$wso2_doctor_0_1_0__stop_(doctor)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.doctor.___init.$moduleStop(doctor)
+	at wso2.doctor.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-26 21:21:06,103] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.doctor.___init.wso2_doctor_0_1_0__stop_(doctor:402)
+	at wso2.doctor.___init.$lambda$wso2_doctor_0_1_0__stop_(doctor)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.doctor.___init.$moduleStop(doctor)
+	at wso2.doctor.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-27 04:01:56,939] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
+[2020-01-27 04:01:56,942] SEVERE {b7a.log.crash} - null 
+java.lang.NullPointerException
+	at wso2.patient.___init.wso2_patient_0_1_0__stop_(patient:657)
+	at wso2.patient.___init.$lambda$wso2_patient_0_1_0__stop_(patient)
+	at org.ballerinalang.jvm.scheduling.SchedulerItem.execute(Scheduler.java:426)
+	at org.ballerinalang.jvm.scheduling.Scheduler.run(Scheduler.java:218)
+	at org.ballerinalang.jvm.scheduling.Scheduler.runSafely(Scheduler.java:191)
+	at org.ballerinalang.jvm.scheduling.Scheduler.start(Scheduler.java:178)
+	at wso2.patient.___init.$moduleStop(patient)
+	at wso2.patient.___init$SignalListener.run(Unknown Source)
+ 
