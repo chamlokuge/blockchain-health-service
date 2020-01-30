@@ -19,7 +19,7 @@ jdbc:Client ssiDB = new({
 
 map<string> sessionMap = {};
 map<boolean> authenticatedMap = {};
-map<string> userMap = {"carol": "123", "dion" : "456"};
+map<string> userMap = {"carol": "123", "dion" : "456", "bob" : "999"};
 string chatBuffer = "";
 string pk = "";
 string randomKey = "";
